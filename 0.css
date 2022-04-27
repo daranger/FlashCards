@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: darkslategray;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position-x: center;
+    background-position-y: 50px;
+}
+
+.main-page{
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 380px;
+    flex-wrap: wrap;
+}
+
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff6f00;
+    background-color: #f9efe5;
+    width: 120px;
+    height: 120px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    transition: 2s ease;
+    transform-style: preserve-3d;
+}
+
+.front{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back{
+    position: absolute;
+    background-color: #f07504;
+    color: #f5ede0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
